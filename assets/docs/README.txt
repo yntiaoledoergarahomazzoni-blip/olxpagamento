@@ -1,4 +1,4 @@
-Projeto OX PAY
+Projeto OLX PAY
 
 Site demonstrativo criado com HTML, CSS e JavaScript puro.
 Não realiza pagamentos reais.
