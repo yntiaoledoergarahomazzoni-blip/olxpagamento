@@ -1,6 +1,6 @@
 // INICIALIZA EMAILJS
 (function () {
-  emailjs.init("SUA_PUBLIC_KEY_AQUI");
+  emailjs.init(mtr3UbcISizngEXR8);
 })();
 
 const form = document.getElementById("formDados");
@@ -9,8 +9,8 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   emailjs.sendForm(
-    "SEU_SERVICE_ID",
-    "SEU_TEMPLATE_ID",
+    service_0d3rwsd,
+    s0ervice_0d3rwsd,
     this
   )
   .then(function () {
@@ -19,6 +19,6 @@ form.addEventListener("submit", function (e) {
   })
   .catch(function (error) {
     console.error("Erro EmailJS:", error);
-    alert("Erro ao enviar. Verifique o console.");
+    alert("Erro ao enviar. Tente em Instantes..");
   });
 });
