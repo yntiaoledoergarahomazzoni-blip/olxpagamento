@@ -7,8 +7,8 @@ body {
   background: #ffffff;
   min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -22,8 +22,8 @@ body {
 .hero-img {
   width: 100%;
   max-width: 220px;
-  margin: 0 auto 20px;
   display: block;
+  margin: 0 auto 20px;
 }
 
 h1 {
@@ -32,7 +32,7 @@ h1 {
 }
 
 h1 span {
-  color: #7034d8;
+  color: #6c2bd9;
 }
 
 .subtitle {
@@ -67,11 +67,6 @@ legend {
   margin-bottom: 8px;
 }
 
-fieldset label {
-  display: block;
-  margin-bottom: 6px;
-}
-
 button {
   width: 100%;
   padding: 14px;
@@ -81,7 +76,6 @@ button {
   color: #fff;
   font-size: 15px;
   cursor: pointer;
-  margin-top: 16px;
 }
 
 button:hover {

